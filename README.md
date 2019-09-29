@@ -8,9 +8,11 @@
 
      <img src="picture/1.png" >
 
-     *note: you can change the name image to the name you want
+     **note: you can change the name image to the name you want*
+     
+     **dont forget use . (dot) in the end of command*
 
-3. After finish build the image, than you can running the container following this command:
+3. After finish build the image, than you can running the container following this command
 
    - ***docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm dsp:1.9***
 
