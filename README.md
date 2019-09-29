@@ -2,7 +2,7 @@
 
 1. Clone this repository to local computer
 
-2. Open folder and build docker image using command 
+2. Open folder and build docker image using command in the terminal
 
    - ***docker build -t dsp:1.9 .***
 
