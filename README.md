@@ -17,6 +17,15 @@
    - ***docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm dsp:1.9***
 
      <img src="picture/2.png">
+     
+     explanation of command:
+     
+     - *-it*= connect the container to terminal
+     - *--net=host* = use network from local 
+     - *-e DISPLAY*= export display server from local computer
+     - *--rm* = remove the container when stop
+     
+     
 
 4. Than it will show the result like picture bellow this.
 
