@@ -4,4 +4,4 @@ echo $DISPLAY
 xhost +
 clear
 
-docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY anto112/dsp:1.2
+docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm anto112/dsp:1.2
