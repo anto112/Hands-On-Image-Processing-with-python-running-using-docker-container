@@ -1,4 +1,4 @@
-### Step to build image and running container for DSP classroom
+### Step to build image and running container for DSP classroom in Linux OS
 
 1. Clone this repository to local computer
 
