@@ -21,8 +21,8 @@ RUN apt-get update \
     	make \
     	mercurial \
     	pkg-config \
-    	python3.4 \
-    	python3.4-dev \
+    	python3.5 \
+    	python3.5-dev \
     	ssh \
 	libffi-dev \
 	libxml2-dev \
@@ -46,8 +46,8 @@ RUN apt-get update \
     	&& apt-get clean
 
 ADD https://raw.githubusercontent.com/pypa/pip/5d927de5cdc7c05b1afbdd78ae0d1b127c04d9d0/contrib/get-pip.py /root/get-pip.py
-RUN python3.4 /root/get-pip.py
-RUN pip3.4 install -U "setuptools" \
+RUN python3.5 /root/get-pip.py
+RUN pip3.5 install -U "setuptools" \
 	"scikit-learn" \
 	"matplotlib==2.0" \
 	"numpy==1.14.5" \
@@ -71,10 +71,14 @@ RUN pip3.4 install -U "setuptools" \
 	"wordcloud" \
 	"tornado" \
 	"opencv-contrib-python" 
-	
+
+RUN pip3.5 install -U "jupyter_contrib_nbextensions" && jupyter contrib nbextension install
+ 
 WORKDIR /home
 
 RUN git clone https://github.com/oilmcut2019/Hands-On-Image-Processing-with-Python.git
+
+RUN pip3.5 install ipython
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
