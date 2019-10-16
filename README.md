@@ -4,7 +4,17 @@ When I try to run the python code from ***Hands-On Image Processing with Python*
 
 #### A. Linux Operating system (Linux OS)
 
-1. ##### First you need to clone or download this repository to your computer. If you use ***[git](https://www.git-scm.com/)***, you can follow the command bellow this
+1. ##### First you have to make sure you already login docker in terminal. If not you can use command bellow this.
+
+   - $ sudo docker login
+
+   It will ask username and password your docker hub. when you success login it will show like picture bellow this
+
+   <img src="img/2.1.png" >
+
+   
+
+2. ##### After that, clone or download this repository to your computer. If you use ***[git](https://www.git-scm.com/)***, you can follow the command bellow this
 
    - $ git clone https://github.com/anto112/Hands-On-Image-Processing-with-python-running-using-docker-container.git
 
@@ -12,7 +22,7 @@ When I try to run the python code from ***Hands-On Image Processing with Python*
 
      
 
-2. ##### Change your working directory. 
+3. ##### Change your working directory. 
 
    - $ cd Hands-On-Image-Processing-with-python-running-using-docker-container
 
@@ -20,7 +30,7 @@ When I try to run the python code from ***Hands-On Image Processing with Python*
 
      ##### 
 
-3. ##### Build docker image using command in the terminal. use command bellow this
+4. ##### Build docker image using command in the terminal. use command bellow this
 
    - $ sudo docker build -t hand-on-image-processing:1.0 .
 
@@ -42,7 +52,7 @@ When I try to run the python code from ***Hands-On Image Processing with Python*
 
      
 
-4. ##### After finish build the image, than you can running the container following this command
+5. ##### After finish build the image, than you can running the container following this command
 
    - $ sudo docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm hand-on-image-processing:1.0
 
@@ -54,9 +64,9 @@ When I try to run the python code from ***Hands-On Image Processing with Python*
      - *--rm* = remove the container when stop
      
      <img src="img/1.6.png">
-   
 
    
+
 6. ##### Open the **link** on the browser your computer such as chrome, internet explorer or Firefox, it will automatically go to your notebook .
 
    <img src="img/4.png">
