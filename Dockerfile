@@ -80,7 +80,9 @@ RUN git clone https://github.com/oilmcut2019/Hands-On-Image-Processing-with-Pyth
 
 RUN pip3.5 install ipython
 
+EXPOSE 7745
+
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
-CMD [ "jupyter","notebook", "--allow-root" ]
+CMD ["./run_jupyter.sh"]
