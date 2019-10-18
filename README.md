@@ -81,11 +81,7 @@ When I try to run the python code from ***Hands-On Image Processing with Python*
 
 #### Now available in docker-hub
 
-For convenient reason, now the image available in docker-hub. so you no need to build your image by yourself. you just pull the image from docker-hub using command bellow this.
-
-- $ docker pull anto112/ubuntu-for-image-processing:1.0
-
-After that running the container with this command.
+For convenient reason, now the image available in docker-hub. so you no need to build your image by yourself. you just running the container following this command.
 
 - $ sudo docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm anto112/hand-on-image-processing
 
