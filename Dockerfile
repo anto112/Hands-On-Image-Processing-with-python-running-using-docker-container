@@ -82,7 +82,10 @@ RUN pip3.5 install ipython
 
 EXPOSE 7745
 
+ADD run_jupyter.sh /root
+RUN chmod +x /root/run_jupyter.sh
+
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
-CMD ["./run_jupyter.sh"]
+CMD ["/root/run_jupyter.sh"]
