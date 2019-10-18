@@ -1,5 +1,7 @@
 ## Build image and container [Docker](https://docs.docker.com/get-started/)  for running python code from [Hands-On Image Processing with Python](https://github.com/PacktPublishing/Hands-On-Image-Processing-with-Python) book
 
+___
+
 When I try to run the python code from ***Hands-On Image Processing with Python*** book use newly environment, I get so many errors ***because the code needs the module or library with a specific version***.  to solve that problem I use ***docker*** to invent an environment that can be running the code. bellow this is the guideline for build the image and container docker.  
 
 #### A. Linux Operating system (Linux OS)
@@ -28,7 +30,7 @@ When I try to run the python code from ***Hands-On Image Processing with Python*
 
      <img src="img/1.2.png" >
 
-     ##### 
+     
 
 4. ##### Build docker image using command in the terminal. use command bellow this
 
@@ -76,6 +78,18 @@ When I try to run the python code from ***Hands-On Image Processing with Python*
    <img src="img/6.png">
 
    
+
+#### Now available in docker-hub
+
+For convenient reason, now the image available in docker-hub. so you no need to build your image by yourself. you just pull the image from docker-hub using command bellow this.
+
+- $ docker pull anto112/ubuntu-for-image-processing:1.0
+
+After that running the container with this command.
+
+- $ sudo docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm anto112/hand-on-image-processing:1.0
+
+Then just copy link to your browser to open the notebook.
 
 #### B. Windows Operating System (Windows OS)
 
