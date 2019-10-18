@@ -87,7 +87,7 @@ For convenient reason, now the image available in docker-hub. so you no need to 
 
 After that running the container with this command.
 
-- $ sudo docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm anto112/hand-on-image-processing:1.0
+- $ sudo docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm anto112/hand-on-image-processing
 
 Then just copy link to your browser to open the notebook.
 
