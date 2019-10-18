@@ -89,9 +89,12 @@ After that running the container with this command.
 
 - $ sudo docker run -it --net=host -v /tmp/.X11-unix:/tmp/.X11-unix --env QT_X11_NO_MITSHM=1 -e DISPLAY --rm anto112/hand-on-image-processing
 
-Then just copy link to your browser to open the notebook.
+Then just copy link to your browser to open the notebook. 
 
 #### B. Windows Operating System (Windows OS)
 
 - If you want to running in windows that have installed WSL ([*Windows Subsystem Linux*](https://docs.microsoft.com/en-us/windows/wsl/install-win10)) you can reference from **[here](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)**. Make sure you need to install Xserver for windows, such as [Xming](https://sourceforge.net/projects/xming/), [X410](https://token2shell.com/howto/x410/) and Etc.
+
+
+##### connect wit me in email: m07158031@mail2.mcut.edu.tw
 
