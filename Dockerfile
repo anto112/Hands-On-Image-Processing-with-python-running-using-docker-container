@@ -66,13 +66,33 @@ RUN pip3.5 install -U "setuptools" \
 	"image" \
 	"h5py==2.9.0" \
 	"ipywidgets==7.4.2" \
-	"opencv-python" \
+	"opencv-python==3.4.2.16" \
 	"Python-fontconfig" \
 	"wordcloud" \
 	"tornado" \
-	"opencv-contrib-python" 
+	"opencv-contrib-python==3.4.2.16" \
+	"networkx==1.11" \
+	"SimpleITK" \
+	"Keras==2.2.4" \
+	"tensorflow==1.14" \
+	"tensorboard==1.14" \
+	"pandas" \
+	"dask" \
+	"imutils"
+	
+WORKDIR /home
 
-RUN pip3.5 install -U "jupyter_contrib_nbextensions" && jupyter contrib nbextension install
+RUN git clone https://github.com/oilmcut2019/Hands-On-Image-Processing-with-Python-B.git
+
+RUN pip3.5 install -U "jupyter_contrib_nbextensions" \
+	&& jupyter contrib nbextension install \
+	&& jupyter nbextension enable codefolding/main \
+	&& jupyter nbextension enable toc2/main \
+	&& jupyter nbextension enable snippets_menu/main \
+	&& jupyter nbextension enable nbTranslate/main
+
+RUN jupyter nbextension install https://rawgit.com/jfbercher/small_nbextensions/master/highlighter.zip  --user \
+	&& jupyter nbextension enable highlighter/highlighter
  
 WORKDIR /home
 
