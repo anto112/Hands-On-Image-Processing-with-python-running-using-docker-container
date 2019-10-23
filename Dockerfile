@@ -80,10 +80,6 @@ RUN pip3.5 install -U "setuptools" \
 	"dask" \
 	"imutils"
 	
-WORKDIR /home
-
-RUN git clone https://github.com/oilmcut2019/Hands-On-Image-Processing-with-Python-B.git
-
 RUN pip3.5 install -U "jupyter_contrib_nbextensions" \
 	&& jupyter contrib nbextension install \
 	&& jupyter nbextension enable codefolding/main \
@@ -96,7 +92,7 @@ RUN jupyter nbextension install https://rawgit.com/jfbercher/small_nbextensions/
  
 WORKDIR /home
 
-RUN git clone https://github.com/oilmcut2019/Hands-On-Image-Processing-with-Python.git
+#RUN git clone https://github.com/oilmcut2019/Hands-On-Image-Processing-with-Python.git --branch=pc-001
 
 RUN pip3.5 install ipython
 

@@ -1,3 +1,3 @@
 #! /bin/bash
 
-jupyter notebook --no-browser --allow-root --port=7745 --NotebookApp.token='oilmcut1234'
+jupyter notebook --no-browser --allow-root --port=7745
